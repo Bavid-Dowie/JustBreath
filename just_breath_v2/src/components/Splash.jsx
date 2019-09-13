@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.css";
 
-function Homepage() {
+function Splash() {
   return (
-    <div>
+  <div>
 
-    </div>
+  </div>
   );
 }
 
-export default Homepage;
+export default Splash;

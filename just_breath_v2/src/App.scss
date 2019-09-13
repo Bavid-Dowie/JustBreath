@@ -1,38 +1,84 @@
 .App {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.splash  {
+  background: #51a1f8;
+  color: white;
+  .h1 {
+    font-size: 36px;
+  }
+    .h2 {
+      font-size: 18px;
+    }
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 10vh;
-  background: #204275;
+  min-height: 12vh;
+  background: #51a1f8;
+  font-size: 25px;
   color: white;
+  img {
+    display: flex;
+    justify-content: left;
+    background: white;
+    left: 0;
+  }
+}
+.card-button {
+  color: black;
+  font-size: 19px;
+  height: 140px;
+  width: 137px;
+  background: #eaa124;
+  opacity: 72%;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
-  background: #204275;
+  min-height: 12vh;
+  background: #51a1f8;
   color: white;
   .nav-links {
-    width: 50%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 8vw;
+    margin-top: 14vw;
+    margin-right: 10vw;
     list-style: none;
     li {
       color: white;
+      font-size: 13px;
       text-decoration: none;
     }
   }
 }
 
-
 body  {
-  min-height: 80vh;
+  min-height: 72.25vh;
+}
+
+.inspirational  {
+  overflow: hidden;
+  display: inline-block;
+  width: 100vw;
+  margin-top: 12vh;
+  margin-bottom: -6vh;
+}
+
+div.dash-button {
+  display: inline-block;
+  width: 100vw;
+  height: 6vh;
+  bottom: 20vh;
+  margin-bottom: 5vh;
+  background: white;
 }
