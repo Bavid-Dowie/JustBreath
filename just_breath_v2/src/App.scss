@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background: #204275;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #204275;
+  color: white;
+  .nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 8vw;
+    list-style: none;
+    li {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+
+body  {
+  min-height: 80vh;
+}
