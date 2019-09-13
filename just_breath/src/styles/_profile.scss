@@ -1,0 +1,74 @@
+@mixin flexStyle {
+  display: flex;
+  height: 10vh;
+  flex-direction: column;
+  justify-content: center;
+  background: skyblue;
+}
+
+.userProfile {
+  background: white;
+  height: 100vh;
+  color: black;
+  // border: 2px solid black;
+}
+
+.profHeader  {
+@include flexStyle();
+}
+
+.profBody  {
+  display: grid;
+  // border: 1px solid black;
+  grid-template-rows: repeat(3, 1fr);
+  height: 80vh;
+}
+
+.userAvatar  {
+  width: 100%;
+  grid-row: 1;
+  background: white;
+  // border: 1px solid black;
+  .userImg {
+    position: absolute;
+    width: 28%;
+    top: 16%;
+    left: 8%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%  ;
+    -moz-border-radius: 50%  ;
+    -ms-border-radius: 50%  ;
+    -o-border-radius: 50%  ;
+  }
+  button {
+    display: flex;
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    height: 8%;
+    img {
+      width: 48%;
+      background: transparent;
+    }
+  }
+  .editButton .onClick {
+    background: black;
+  }
+}
+
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  grid-row: 2 / 4;
+  text-align: left;
+  p {
+    padding: 0vh 6vw;
+    text-transform: uppercase;
+  }
+}
+
+.profFooter  {
+@include flexStyle();
+}

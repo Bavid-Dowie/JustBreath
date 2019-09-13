@@ -1,0 +1,97 @@
+.userProfile {
+  background: white;
+  height: 100vh;
+  color: black;
+}
+
+.profHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: skyblue;
+}
+
+.profBody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  height: 80vh;
+}
+
+.userAvatar {
+  width: 100%;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background: white;
+}
+
+.userAvatar .userImg {
+  position: absolute;
+  width: 28%;
+  top: 16%;
+  left: 8%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.userAvatar .editButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 62%;
+  top: 20%;
+  height: 8%;
+  width: 30%;
+  border: 1px solid black;
+  font-size: 2em;
+}
+
+.userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.userInfo p {
+  padding: 0vh 6vw;
+  text-transform: uppercase;
+}
+
+.profFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: skyblue;
+}
+/*# sourceMappingURL=styles.css.map */
